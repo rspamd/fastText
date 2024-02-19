@@ -9,13 +9,15 @@
 cmake_minimum_required(VERSION 2.8.9)
 project(fasttext)
 
+set(CMAKE_CXX_STANDARD 17)
+
 # The version number.
 set (fasttext_VERSION_MAJOR 0)
 set (fasttext_VERSION_MINOR 1)
 
 include_directories(fasttext)
 
-set(CMAKE_CXX_FLAGS " -pthread -std=c++11 -O2")
+set(CMAKE_CXX_FLAGS " -pthread -std=c++17 -O2")
 
 set(HEADER_FILES
     src/args.h
