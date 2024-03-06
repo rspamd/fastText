@@ -20,6 +20,7 @@ include_directories(fasttext)
 set(CMAKE_CXX_FLAGS " -pthread -std=c++17 -O2")
 
 set(HEADER_FILES
+    src/aligned.h
     src/args.h
     src/autotune.h
     src/densematrix.h
